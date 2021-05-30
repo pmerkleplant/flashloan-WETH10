@@ -12,12 +12,12 @@ import "../interfaces/IERC3156FlashLender.sol";
  * The lender, e.g. the protocol providing the flash loan, uses the
  * `onFlashLoan` function as a callback.
  *
- * Inside of the `onFlashLoan` function the contract has access to the loan.
+ * Inside the `onFlashLoan` function the contract has access to the loan.
  *
  * After execution of the `onFlashLoan` the contract must possess at least the
  * loaned amount for the flash loan to succeed.
  *
- * This contract is copied from EIP3156 example implementation.
+ * This contract is copied from EIP3156's example implementation.
  */
 contract FlashBorrower is IERC3156FlashBorrower {
     IERC3156FlashLender lender;
